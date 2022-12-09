@@ -1,0 +1,318 @@
+{
+	"info": {
+		"_postman_id": "3281c294-c496-43a9-a20b-78b149ebd58f",
+		"name": "Ak_Tavels",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23331226"
+	},
+	"item": [
+		{
+			"name": "https://b2capi.akbartravels.com/Flights/FareCalendar",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "b2capi.akbartravels.com"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjMzMyIsIm5iZiI6MTY3MDU2OTU3OCwiZXhwIjoxNjcwNjU1OTc4LCJpYXQiOjE2NzA1Njk1NzgsImlzcyI6IndlYmNvbm5lY3QiLCJhdWQiOiJjbGllbnQifQ.0vwiHhW5em9sYIXrSNPt5lcdIHmhWcLvRtz-1zLY63A"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://www.akbartravels.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.akbartravels.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "x-api-key",
+						"value": "cabd55501532109aac672530ae731bb1362e423d82c64921f9ce84ac8492057eb56d2839a1971baeed601d7422e14c264928b40f5bf1ccad572c7e9dbba18b39024f"
+					},
+					{
+						"key": "x-lan",
+						"value": "EN"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"ClientID\":\"\",\"TUI\":\"ONa34ebbfc-bdc8-4750-9d3c-c1a8aa96b9f2|590dee27-1e6a-4bb1-94c4-dc0bcf66e778|20221209123751\",\"Days\":30,\"OnwardDate\":\"2022-12-09\",\"ReturnDate\":\"\",\"From\":\"AMD\",\"To\":\"BLR\"}"
+				},
+				"url": {
+					"raw": "https://b2capi.akbartravels.com/Flights/FareCalendar",
+					"protocol": "https",
+					"host": [
+						"b2capi",
+						"akbartravels",
+						"com"
+					],
+					"path": [
+						"Flights",
+						"FareCalendar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://www.akbartravels.com/Bus/GetAvailability?TimeStamp=1670570071609",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(700);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "www.akbartravels.com"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/javascript, */*; q=0.01"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "cookie",
+						"value": "ASP.NET_SessionId=2m2qtjmpl5l5vliglblip4yl; isDesktop=true; _fbp=fb.1.1670563903763.1214127528; _clck=cai8dj|1|f79|0; _gid=GA1.2.834618344.1670563905; WZRK_G=29787810b24743e6864d2f68870afaa0; _ga=GA1.2.853994655.1670563905; _ga_0WN55DNF7D=GS1.1.1670569578.2.1.1670569674.0.0.0; _clsk=dccqnp|1670569678220|3|1|d.clarity.ms/collect; __RequestVerificationToken=iuvUiCKrxiOJgblg9aOmIIOTyEp9OlKBz_k-Q8FBZ__1BqNDI5rQJVHcC3EHh8SsLXAqYTVxiHdeoWkPcLerHKFh7__rdgu_KccASSyf95M1; _gat_UA-4697727-1=1; WZRK_S_8W4-Z86-994Z=%7B%22p%22%3A3%2C%22s%22%3A1670569580%2C%22t%22%3A1670570034%7D; AWSALBTG=+BYP6GUV0OdzuCElfz/KNH/qHrNIVgu9XFWcE8q4lwY2K9V65KR3u1cL1HdpanPZL6g+zUStKSZCznXAmcoxuWwgFo9jFIj7laZ1cmmUUBq0Km2lAAQGoDngBsYDK7SwwecWWbPq8mS0P5kS2E/KQWlJyOBFruSGMAQjV/277FqI; AWSALBTGCORS=+BYP6GUV0OdzuCElfz/KNH/qHrNIVgu9XFWcE8q4lwY2K9V65KR3u1cL1HdpanPZL6g+zUStKSZCznXAmcoxuWwgFo9jFIj7laZ1cmmUUBq0Km2lAAQGoDngBsYDK7SwwecWWbPq8mS0P5kS2E/KQWlJyOBFruSGMAQjV/277FqI; AWSALB=uVzFU7LL8ZE4TV4etZ2LDuOGzuJ5oNA2Np4TIyAHBPVfJEP0wMpiP1KHMuAnGK0RIKfxBLC5xHzLJGi4py1ZcTc6hNs40PeRNGHRxWt/DHlF2zihdaXu18xFKo6y; AWSALBCORS=uVzFU7LL8ZE4TV4etZ2LDuOGzuJ5oNA2Np4TIyAHBPVfJEP0wMpiP1KHMuAnGK0RIKfxBLC5xHzLJGi4py1ZcTc6hNs40PeRNGHRxWt/DHlF2zihdaXu18xFKo6y; BusFromCookie=Goa; BusToCookie=Mumbai"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.akbartravels.com/Bus/Search"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "x-requested-with",
+						"value": "XMLHttpRequest"
+					}
+				],
+				"url": {
+					"raw": "https://www.akbartravels.com/Bus/GetAvailability?TimeStamp=1670570071609",
+					"protocol": "https",
+					"host": [
+						"www",
+						"akbartravels",
+						"com"
+					],
+					"path": [
+						"Bus",
+						"GetAvailability"
+					],
+					"query": [
+						{
+							"key": "TimeStamp",
+							"value": "1670570071609"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://travelportal.akbartravels.com/api/hotels/search/result/f37f1319-cc6c-44e5-b0b0-3df0ce51413e/rate",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "travelportal.akbartravels.com"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "access-control-allow-methods",
+						"value": "GET, POST, OPTIONS"
+					},
+					{
+						"key": "access-control-allow-origin",
+						"value": "*"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjMzMyIsIm5iZiI6MTY3MDU2OTU3OCwiZXhwIjoxNjcwNjU1OTc4LCJpYXQiOjE2NzA1Njk1NzgsImlzcyI6IndlYmNvbm5lY3QiLCJhdWQiOiJjbGllbnQifQ.0vwiHhW5em9sYIXrSNPt5lcdIHmhWcLvRtz-1zLY63A"
+					},
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "cookie",
+						"value": "_fbp=fb.1.1670563903763.1214127528; _clck=cai8dj|1|f79|0; _gid=GA1.2.834618344.1670563905; WZRK_G=29787810b24743e6864d2f68870afaa0; _ga=GA1.2.853994655.1670563905; _gat_UA-4697727-1=1; WZRK_S_8W4-Z86-994Z=%7B%22p%22%3A5%2C%22s%22%3A1670569580%2C%22t%22%3A1670570394%7D; _clsk=dccqnp|1670570394718|7|1|d.clarity.ms/collect; _ga_0WN55DNF7D=GS1.1.1670569578.2.1.1670570394.0.0.0"
+					},
+					{
+						"key": "origin",
+						"value": "https://www.akbartravels.com"
+					},
+					{
+						"key": "pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.akbartravels.com/"
+					},
+					{
+						"key": "search-tracing-key",
+						"value": "5e5fb6d3-30dc-4d33-84c9-a339e2c16243"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+					}
+				],
+				"url": {
+					"raw": "https://travelportal.akbartravels.com/api/hotels/search/result/f37f1319-cc6c-44e5-b0b0-3df0ce51413e/rate",
+					"protocol": "https",
+					"host": [
+						"travelportal",
+						"akbartravels",
+						"com"
+					],
+					"path": [
+						"api",
+						"hotels",
+						"search",
+						"result",
+						"f37f1319-cc6c-44e5-b0b0-3df0ce51413e",
+						"rate"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "{base_url}",
+			"value": "https://travelportal.akbartravels.com"
+		}
+	]
+}
