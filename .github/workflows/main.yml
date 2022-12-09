@@ -1,12 +1,11 @@
-- name: Checkout
-  uses: actions/checkout@v1
+ - name: Checkout
+   uses: actions/checkout@v1
 
-- name: Run API Tests
-  id: run-newman
-  uses: anthonyvscode/newman-action@v1
-  with:
-    collection: http://example.com/collection.json
+ - name: Run API Tests
+   id: run-newman
+   uses: anthonyvscode/newman-action@v1
+   with:
+    collection: Ak_Tavels.postman_collection.json
     reporters: cli
-
-- name: Output summary to console
-  run: echo ${{ steps.run-newman.outputs.summary }}
+ - name: Output summary to console
+    run: newman run "Ak_Tavels.postman_collection.json"
