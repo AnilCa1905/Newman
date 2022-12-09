@@ -9,7 +9,7 @@ postman_tests:
     script:
         - newman --version
         - npm install -g newman-reporter-html
-        - newman run collection.json --reporters cli,html,junit --reporter-html-export report.html --reporter-junit-export report.xml
+        - newman run Ak_Tavels.postman_collection101.json --reporters cli,html,junit --reporter-html-export report.html --reporter-junit-export report.xml
     artifacts:
         when: always
         paths:
